@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303030;
+}
+
+/* App */
+.tools {
+    width: 5vw;
+    height: 100vh;
+    background-color: #444444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tools-container {
+    width: 5vw;
+    height: 100vh;
+    margin: 5vh 0 5vh 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#clear {
+    font-size: 2rem;
+    color: #fff;
+}
+
+#clear:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+i:hover {
+    color: #606060;
+    cursor: pointer;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 100vh;
+    margin-left: 5vw;
+}
+
+#canvas {
+    width: 70vw;
+    height: 80vh;
+    background-color: #fff;
+}
