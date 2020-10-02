@@ -58,14 +58,11 @@ i:hover {
     width: 95vw;
     height: 100vh;
     margin-left: 5vw;
+    background-color: #303030;
 }
 
 #canvas {
     width: 70vw;
     height: 80vh;
     background-color: #fff;
-}
-
-.active {
-    
 }
