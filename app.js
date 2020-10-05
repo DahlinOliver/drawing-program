@@ -7,6 +7,7 @@ const paletteBtn = document.querySelector('#palette');
 const eyedropperBtn = document.querySelector('#eyedropper');
 
 const canvas = document.querySelector('#canvas');
+const canvasArea = document.querySelector('.canvas-area');
 const ctx = canvas.getContext("2d");
 let isDrawing = false;
 
@@ -22,6 +23,11 @@ function start(e) {
 }
 
 function draw({ clientX: x, clientY: y }) {
+    var BB = canvas.getBoundingClientRect();
+    var offsetX = BB.left;
+    var offsetY = BB.top;
+    var mouseX = parseInt(x - offsetX);
+    var mouseY = parseInt(y - offsetY);
     if (!isDrawing) return;
 
     ctx.lineWidth = 5;
@@ -29,12 +35,12 @@ function draw({ clientX: x, clientY: y }) {
     ctx.lineJoin = 'round';
     ctx.strokeStyle = '#000';
 
-    ctx.lineTo(x, y);
+    ctx.lineTo(mouseX, mouseY);
     ctx.stroke();
     ctx.beginPath();
-    ctx.moveTo(x, y);
+    ctx.moveTo(mouseX, mouseY);
 
-    console.log(x, y);
+    //console.log(x, y);
 }
 
 function stop() {
@@ -49,7 +55,10 @@ function clearCanvas() {
 window.addEventListener('resize', resizeCanvas);
 
 function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    var positionInfo = canvasArea.getBoundingClientRect();
+    var height = positionInfo.height;
+    var width = positionInfo.width;
+    canvas.width = width;
+    canvas.height = height;
 }
 resizeCanvas();

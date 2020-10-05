@@ -60,9 +60,14 @@ i:hover {
     margin-left: 5vw;
     background-color: #303030;
 }
-
-#canvas {
-    width: 70vw;
-    height: 80vh;
+.canvas-area {
+    display: block;
     background-color: #fff;
+    width: 70vw;
+    height: 80vh; 
 }
+/* canvas {
+     width: 70vw;
+    height: 80vh; 
+    background-color: #fff;
+} */
