@@ -71,3 +71,77 @@ i:hover {
     height: 80vh; 
     background-color: #fff;
 } */
+
+
+/* EXTENDER */
+
+.tool-extender {
+    position: absolute;
+    left: 5vw;
+    top: 46vh;
+    width: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.triangle {
+    width: 0;
+	height: 0;
+	border-top: 12.5px solid transparent;
+	border-right: 25px solid #555;
+	border-bottom: 12.5px solid transparent;
+   /*  position: absolute;
+    left: 5vw;
+    top: 49vh; */
+}
+
+.rectangle {
+    width: 15vw;
+    height: 10vh;
+    background-color: #555;
+    /* position: absolute;
+    left: 6.8vw;
+    top: 46vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.small {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.medium {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.big {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.huge {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
